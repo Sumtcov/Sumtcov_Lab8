@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.separator {
+    height: 4px; /* Висота лінії */
+    background-color: #72ec78f5; /* Колір лінії (червоний у цьому випадку) */
+}
+
+body {
+    font-family: Georgia;
+    background-color: #2b0000;
+    color: #ffffff;
+}
+
+.red{
+    background-color: #750808;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.content-section {
+    display: flex;
+    padding: 60px 0;
+    max-width: 1000px;
+    height: 600px;
+    margin: 0 auto; /* Центрування секції в контейнері */
+}
+
+.circle-image {
+    width: 380px;
+    height: 380px;
+    border-radius: 50%; /* Робить зображення круглим */
+    overflow: hidden; /* Обрізає зображення, щоб воно помістилось в коло */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Забезпечує, що зображення заповнює коло повністю */
+}
+
+.text-content {
+    width: 50%;
+    padding-right: 35px;
+}
+
+.text-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h30 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    background-color: #333;
+}
+
+.separatorP{
+    height: 52px;
+}
+
+.text-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #66cc99;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.circle-image {
+    width: 380px;
+    height: 380px;
+    background-color: #333;
+    border-radius: 50%;
+    border: 10px solid #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+.portfolio {
+    text-align: center;
+    padding: 50px;
+}
+
+.grid-container {
+    display: grid; /* Використання Grid Layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 стовпці */
+    gap: 10px; /* Відстань між зображеннями */
+}
+
+.grid-container img {
+    width: 100%; /* Зображення заповнюють всю ширину стовпців */
+    height: auto; /* Зберігає пропорції зображення */
+}
+
+
+
+
+.card-container {
+    display: flex;
+    gap: 50px;
+    justify-content: center; /* Горизонтальне вирівнювання */
+    align-items: center; /* Вертикальне вирівнювання */
+    
+}
+
+.card {
+    width: 225px;
+    height: 305px;
+    background-color: #fff;
+    color: #615050;
+    
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.card img {
+    width: 120px;
+    height: 120px;
+    background-color: #333;
+    margin-bottom: 15px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Проміжок між блоками */
+    padding: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+.styled-list {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+}
+
+.styled-list h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.styled-list ul {
+    list-style-type: none; /* Вимикає стандартні маркери списку */
+    padding-left: 0;
+}
+
+.styled-list ul li {
+    position: relative;
+    margin-bottom: 8px;
+    color: #66cc99; /* Зелений колір для тексту */
+}
+
+.styled-list ul li::before {
+    content: "»"; /* Символ для маркера */
+    color: #66cc99; /* Зелений колір для маркера */
+    position: absolute;
+    left: -20px; /* Зсув маркера ліворуч */
+    font-size: 16px;
+}
+
+.contact-info, .contact-form {
+    background-color: #333;
+    padding: 20px;
+    flex: 1; /* Вирівнює секцію за шириною */
+    border-radius: 5px;
+    min-width: 250px; /* Мінімальна ширина блоків */
+}
+
+.highlight {
+    color: #66cc99; /* Зелений колір для виділених елементів */
+}
+
+.contact-info h2, .contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #555;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 80px;
+}
+
+.contact-form button {
+    width: 100px;
+    padding: 10px;
+    background-color: #66cc99;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    align-self: flex-start;
+}
+
+.contact-form button:hover {
+    background-color: #55aa88;
+}
+
+.gray{
+    background-color: #333;
+}
+
+.separatorb{
+    height: 4px; /* Висота лінії */
+    background-color: #050505f5; /* Колір лінії (червоний у цьому випадку) */
+}
+
+footer{
+    background-color: #333;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Проміжок між блоками */
+    padding: 40px;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+footer, text{
+    color:#666;
+    font-size: 7px;
+}
+
+.my-button:hover, .read-more:hover {
+    background-color: #45a049;
+}
+
+.my-button:hover, .card:hover {
+    background-color:#63e96a;
+}
+
+.grid-container img:hover {
+    transform: scale(1.05);
+}
+
+
+.my-button:hover, .read-more:hover {
+    background-color: #45a049;
+}
